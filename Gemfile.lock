@@ -29,6 +29,8 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.0)
     atomic (1.1.15)
+    bootstrap-sass (3.1.1.0)
+      sass (~> 3.2)
     builder (3.2.2)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -39,6 +41,8 @@ GEM
     coffee-script-source (1.7.0)
     erubis (2.7.0)
     execjs (2.0.2)
+    haml (4.0.5)
+      tilt
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (2.0.4)
@@ -54,6 +58,8 @@ GEM
     mime-types (1.25.1)
     minitest (5.3.0)
     multi_json (1.9.0)
+    mysql2 (0.3.15)
+    newrelic_rpm (3.7.2.195)
     polyglot (0.3.4)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -114,10 +120,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   coffee-rails (~> 4.0.0)
+  haml
   jbuilder (~> 2.0)
   jquery-rails
-  rails (= 4.1.0.rc1)
+  mysql2
+  newrelic_rpm
+  rails (~> 4.1.0.rc1)
   sass-rails (~> 4.0.1)
   sdoc (~> 0.4.0)
   spring

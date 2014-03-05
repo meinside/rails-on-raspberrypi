@@ -19,6 +19,7 @@
 # Ignore temp files
 *.swp
 
-# config files
-config/database.yml
-config/newrelic.yml
+# private config files
+/config/database.yml
+/config/newrelic.yml
+/config/secrets.yml
