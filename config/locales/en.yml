@@ -20,4 +20,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  layouts:
+    header:
+      home: "home"
+      works: "works"
+    footer:
+  home:
+    index:
+      uptime: "Uptime"
+      machine: "Machine"
+      cpu_temperature: "CPU Temperature"
+      free_spaces: "Free Spaces"
+      free_memory: "Free Memory"
+

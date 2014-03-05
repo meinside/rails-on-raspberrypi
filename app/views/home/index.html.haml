@@ -1,0 +1,29 @@
+%h3 Raspberry Pi Server
+
+%div.server-stat
+  %h6
+    &gt; #{ t('.uptime') }:
+  %pre.stat #{ @uptime }
+  %br/
+
+  %h6
+    &gt; #{ t('.machine') }:
+  %pre.stat #{ @uname }
+  %pre.stat #{ @cpu_info }
+  %br/
+
+  %h6
+    &gt; #{ t('.cpu_temperature') }:
+  %pre.stat #{ '%.1f' %[@cpu_temp] } °C
+  %br/
+
+  %h6
+    &gt; #{ t('.free_spaces') }:
+  %pre.stat #{ @df }
+  %br/
+
+  %h6
+    &gt; #{ t('.free_memory') }:
+  %pre.stat #{ @free }
+  %br/
+

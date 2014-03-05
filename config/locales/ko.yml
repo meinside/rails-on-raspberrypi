@@ -1,0 +1,17 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ko:
+  layouts:
+    header:
+      home: "홈"
+      works: "작업물"
+    footer:
+  home:
+    index:
+      uptime: "업타임"
+      machine: "머신"
+      cpu_temperature: "CPU 온도"
+      free_spaces: "저장공간"
+      free_memory: "메모리"
+

@@ -1,0 +1,28 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.server-stat
+{
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 0px 10px 0px;
+  font-size: 10px;
+  font-family: 'courier new', courier, monospace;
+  line-height: 120%;
+  background-color: #080808;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  float: left;
+  clear: left;
+  display: block;
+}
+
+pre.stat
+{
+  background-color: #000000;
+  color: #A0A0A0;
+  font-size: 8px;
+  border: none;
+}
+
