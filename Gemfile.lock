@@ -59,7 +59,7 @@ GEM
     minitest (5.3.0)
     multi_json (1.9.0)
     mysql2 (0.3.15)
-    newrelic_rpm (3.7.2.195)
+    newrelic_rpm (3.7.3.199)
     polyglot (0.3.4)
     rack (1.5.2)
     rack-test (0.6.2)
