@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   scope '(:locale)' do
     get 'works/index'
+    get 'works' => 'works#index'
     get 'home/index'
   end
 
