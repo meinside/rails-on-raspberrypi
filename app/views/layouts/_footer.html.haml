@@ -2,12 +2,15 @@
   %div.container
     %p.text-muted.credit
       Powered by: 
-      = link_to "http://raspberrypi.org", target: "_blank" do
-        = image_tag "http://www.raspberrypi.org/wp-content/uploads/2012/03/Raspi_Colour_R.png", width: "16px"
-      Raspberry Pi
-      \/ Rails 
+      = link_to 'http://raspberrypi.org', target: '_blank' do
+        = image_tag 'http://www.raspberrypi.org/wp-content/uploads/2012/03/Raspi_Colour_R.png', width: '16px'
       %strong
-        = Rails.version
-      \/ Ruby 
+        Raspberry Pi
+      \/
       %strong
-        = RUBY_VERSION
+        Rails 
+      = Rails.version
+      \/
+      %strong
+        Ruby 
+      = RUBY_VERSION
