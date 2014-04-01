@@ -14,12 +14,17 @@
 
   %h6
     &gt; #{ t('.cpu_temperature') }:
-  %pre.stat #{ '%.1f' %[@cpu_temp] } °C
+  %pre.stat #{ @cpu_temp }
   %br/
 
   %h6
     &gt; #{ t('.free_spaces') }:
   %pre.stat #{ @df }
+  %br/
+  
+  %h6
+    &gt; #{ t('.memory_split') }:
+  %pre.stat #{ @mem_splits }
   %br/
 
   %h6

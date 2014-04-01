@@ -13,5 +13,6 @@ ko:
       machine: "머신"
       cpu_temperature: "CPU 온도"
       free_spaces: "저장공간"
+      memory_split: "메모리 구성"
       free_memory: "메모리"
 

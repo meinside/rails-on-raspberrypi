@@ -31,5 +31,6 @@ en:
       machine: "Machine"
       cpu_temperature: "CPU Temperature"
       free_spaces: "Free Spaces"
+      memory_split: "Memory Split"
       free_memory: "Free Memory"
 
