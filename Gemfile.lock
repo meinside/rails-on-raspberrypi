@@ -127,7 +127,7 @@ DEPENDENCIES
   mysql2
   newrelic_rpm
   rails (~> 4.1.0)
-  sass-rails (~> 4.0.1)
+  sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
   sqlite3
