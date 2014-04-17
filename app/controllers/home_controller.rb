@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   private
   def cpu_temperature
-    cpu_temp = `vcgencmd measure_temp`.strip  # XXX - vcgencmd requires the user to be in 'video' group
+    cpu_temp = (`vcgencmd measure_temp` || 'not supported').strip  # XXX - vcgencmd requires the user to be in 'video' group
     if cpu_temp =~ /temp=(.*)/
       cpu_temp = $1
     end
