@@ -1,16 +1,18 @@
 %div#footer
-  %div.container
-    %p.text-muted.credit
-      Powered by: 
-      = link_to 'http://raspberrypi.org', target: '_blank' do
-        = image_tag 'http://www.raspberrypi.org/wp-content/uploads/2012/03/Raspi_Colour_R.png', width: '16px'
-      %strong
-        Raspberry Pi
-      \/
-      %strong
-        Rails 
-      = Rails.version
-      \/
-      %strong
-        Ruby 
-      = RUBY_VERSION
+  %nav{class: 'navbar navbar-default navbar-fixed-bottom'}
+    %div{class: 'navbar-inner navbar-content-center'}
+      %div.container
+        %p.text-muted.credit
+          Powered by: 
+          = link_to 'http://raspberrypi.org', target: '_blank' do
+            = image_tag 'http://www.raspberrypi.org/wp-content/uploads/2012/03/Raspi_Colour_R.png', width: '16px'
+          %strong
+            Raspberry Pi
+          \/
+          %strong
+            Rails 
+          = Rails.version
+          \/
+          %strong
+            Ruby 
+          = RUBY_VERSION
