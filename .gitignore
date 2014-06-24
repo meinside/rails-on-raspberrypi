@@ -6,6 +6,7 @@
 
 # Ignore OSX files/dirs
 .AppleDouble/
+.DS_Store
 
 # Ignore bundler config
 /.bundle
