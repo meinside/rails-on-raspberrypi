@@ -22,11 +22,12 @@
 en:
   layouts:
     header:
-      home: "home"
-      works: "works"
+      home: "Home"
+      works: "Works"
     footer:
   home:
     index:
+      hostname: "Hostname"
       uptime: "Uptime"
       machine: "Machine"
       cpu_temperature: "CPU Temperature"

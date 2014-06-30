@@ -2,16 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div.works
-{
+div.works {
   width: 100%;
   padding: 10px 10px 10px 10px;
   margin: 10px 0px 10px 0px;
   font-size: 10px;
-  font-family: 'courier new', courier, monospace;
+  font-family: arial, monospace;
   line-height: 120%;
   float: left;
   clear: left;
   display: block;
+
+  ul {
+    font-size: 12px;
+    li {
+      margin-bottom: 5px;
+    }
+  }
 }
 

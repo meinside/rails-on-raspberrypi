@@ -13,6 +13,7 @@ class HomeController < ApplicationController
 
   public
   def index
+    @hostname = `hostname`
     @uname = `uname -a`
     @uptime = `uptime`
     @df = `df -h`

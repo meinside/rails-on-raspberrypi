@@ -2,12 +2,16 @@
 %div.navbar.navbar-default.navbar-fixed-top
   %div.container
     %div.navbar-header
-      %button{type: 'button', class: 'navbar-toggle', 'data-toggle' => 'collapse', 'data-target' => '.navbar-collapse'}
+      %button.navbar-toggle{type: 'button', 'data-toggle' => 'collapse', 'data-target' => '.navbar-collapse'}
         %span.icon-bar
 
-      = link_to t('.home'), home_path, class: 'navbar-brand'
+      = link_to home_path, class: 'navbar-brand' do
+        %span.glyphicon.glyphicon-home
+          = t('.home')
     %div.collapse.navbar-collapse
-      %ul.nav.navbar-nav
+      %ul.nav.navbar-nav.navbar-right
         %li
-          = link_to t('.works'), works_path
+          = link_to works_path do
+            %span.glyphicon.glyphicon-briefcase
+              = t('.works')
     / /.nav-collapse

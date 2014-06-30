@@ -9,6 +9,7 @@ ko:
     footer:
   home:
     index:
+      hostname: "호스트명"
       uptime: "업타임"
       machine: "머신"
       cpu_temperature: "CPU 온도"

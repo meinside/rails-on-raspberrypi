@@ -2,33 +2,38 @@
 
 %div.server-stat
   %h6
-    &gt; #{ t('.uptime') }:
+    #{ t('.hostname') }
+  %pre.stat #{ @hostname }
+  %br/
+
+  %h6
+    #{ t('.uptime') }
   %pre.stat #{ @uptime }
   %br/
 
   %h6
-    &gt; #{ t('.machine') }:
+    #{ t('.machine') }
   %pre.stat #{ @uname }
   %pre.stat #{ @cpu_info }
   %br/
 
   %h6
-    &gt; #{ t('.cpu_temperature') }:
+    #{ t('.cpu_temperature') }
   %pre.stat #{ @cpu_temp }
   %br/
 
   %h6
-    &gt; #{ t('.free_spaces') }:
+    #{ t('.free_spaces') }
   %pre.stat #{ @df }
   %br/
   
   %h6
-    &gt; #{ t('.memory_split') }:
+    #{ t('.memory_split') }
   %pre.stat #{ @mem_splits }
   %br/
 
   %h6
-    &gt; #{ t('.free_memory') }:
+    #{ t('.free_memory') }
   %pre.stat #{ @free }
   %br/
 
