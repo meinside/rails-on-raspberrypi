@@ -1,6 +1,6 @@
 == Rails on Raspberry Pi
 
-this application is for testing rails on raspberry pi servers.
+This application is for monitoring Raspberry Pi server's status.
 
 === 1. Configuration
 
