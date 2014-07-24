@@ -6,6 +6,16 @@ Rails.application.routes.draw do
     get 'home/index'
   end
 
+  # json interfaces
+  get 'hostname.:format' => 'api#hostname', format: :json
+  get 'uname.:format' => 'api#uname', format: :json
+  get 'uptime.:format' => 'api#uptime', format: :json
+  get 'free_spaces.:format' => 'api#free_spaces', format: :json
+  get 'memory_split.:format' => 'api#memory_split', format: :json
+  get 'free_memory.:format' => 'api#free_memory', format: :json
+  get 'cpu_temperature.:format' => 'api#cpu_temperature', format: :json
+  get 'cpu_info.:format' => 'api#cpu_info', format: :json
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

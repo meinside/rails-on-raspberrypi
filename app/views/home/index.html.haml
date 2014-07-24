@@ -2,38 +2,50 @@
 
 %div.server-stat
   %h6
-    #{ t('.hostname') }
-  %pre.stat #{ @hostname }
+    = t('.hostname')
+  %pre.stat#hostname
+    / hostname here
   %br/
 
   %h6
-    #{ t('.uptime') }
-  %pre.stat #{ @uptime }
+    = t('.uptime')
+    %span.glyphicon.glyphicon-refresh.refresh#refresh-uptime/
+  %pre.stat#uptime
+    / uptime here
   %br/
 
   %h6
-    #{ t('.machine') }
-  %pre.stat #{ @uname }
-  %pre.stat #{ @cpu_info }
+    = t('.machine')
+  %pre.stat#uname
+    / uname here
+  %pre.stat#cpu_info
+    / cpu_info here
   %br/
 
   %h6
-    #{ t('.cpu_temperature') }
-  %pre.stat #{ @cpu_temp }
+    = t('.cpu_temperature')
+    %span.glyphicon.glyphicon-refresh.refresh#refresh-cpu_temperature/
+  %pre.stat#cpu_temperature
+    / cpu_temperature here
   %br/
 
   %h6
-    #{ t('.free_spaces') }
-  %pre.stat #{ @df }
+    = t('.free_spaces')
+    %span.glyphicon.glyphicon-refresh.refresh#refresh-free_spaces/
+  %pre.stat#free_spaces
+    / free_spaces here
   %br/
   
   %h6
-    #{ t('.memory_split') }
-  %pre.stat #{ @mem_splits }
+    = t('.memory_split')
+  %pre.stat#memory_split
+    / memory_split here
   %br/
 
   %h6
-    #{ t('.free_memory') }
-  %pre.stat #{ @free }
+    = t('.free_memory')
+    %span.glyphicon.glyphicon-refresh.refresh#refresh-free_memory/
+  %pre.stat#free_memory
+    / free_memory here
   %br/
 
