@@ -53,3 +53,6 @@ gem 'newrelic_rpm'
 # HAML
 gem 'haml'
 
+# for spinner
+gem 'spinjs-rails'
+
