@@ -14,5 +14,5 @@
 //= require jquery_ujs
 //= require jquery.spin
 //= require turbolinks
-//= require bootstrap
+//= require bootstrap-sprockets
 //= require_tree .
