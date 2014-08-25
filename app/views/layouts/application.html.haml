@@ -28,16 +28,14 @@
     = csrf_meta_tags
     = yield(:head)
   %body{ 'data-controller' => params[:controller], 'data-action' => params[:action] }
-    / wrap all page content here
-    %div#wrap
-      / header here
-      = render 'layouts/header'
+    / header here
+    = render 'layouts/header'
 
-      %div.container
-        / message here
-        = render 'layouts/messages'
-        / main content here
-        = yield
+    %div.container
+      / message here
+      = render 'layouts/messages'
+      / main content here
+      = yield
 
     / footer and ascii art here
     = render 'layouts/footer'

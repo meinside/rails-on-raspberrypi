@@ -17,9 +17,13 @@ $navbar-height: 30px;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-html, body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* margin bottom by footer height */
+  margin-bottom: 30px;
 }
 
 /* Wrapper for page content to push down footer */
@@ -33,21 +37,25 @@ html, body {
 }
 
 /* Set the fixed height of the footer here */
-#footer {
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* fixed height of the footer */
   height: 30px;
   background-color: #f5f5f5;
 }
 
 /* Custom page CSS
 -------------------------------------------------- */
-#wrap > .container {
+body > .container {
   padding: 30px 15px 15px;
 }
 .container .credit {
   margin: 5px 0;
 }
 
-#footer > .container {
+.footer > .container {
   padding-left: 10px;
   padding-right: 10px;
   z-index: 1;
