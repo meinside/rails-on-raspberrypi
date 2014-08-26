@@ -15,4 +15,5 @@
 //= require jquery.spin
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require pace.min-v0.5.6
 //= require_tree .
