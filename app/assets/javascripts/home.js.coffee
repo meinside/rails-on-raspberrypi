@@ -32,16 +32,13 @@ fetch = (name) ->
     value.spin(false)
   , 'json')
 
-# initialize stuffs
-init = ->
+# on page loads,
+$(document).ready(->
   for name in VALUES
     fetch name
 
     $("#refresh-#{name}").click (event) =>
       name = event.currentTarget.id.replace(/^refresh-/, '')
       fetch name
-
-# on page loads,
-$(document).ready(init)
-$(document).on('page:load', init) # XXX - turbo-links prevents jQuery from working
+)
 
