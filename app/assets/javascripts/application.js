@@ -17,5 +17,5 @@
 //= require bootstrap-sprockets
 //= require spin
 //= require jquery.spin
-//= require pace.min-v0.5.6
+//= require pace/pace
 //= require_tree .

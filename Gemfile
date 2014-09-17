@@ -56,6 +56,9 @@ gem 'haml'
 # for spinner
 gem 'spinjs-rails'
 
+# for pace
+gem 'pace-rails'
+
 # fix jquery & turbolinks' interference
 gem 'jquery-turbolinks'
 
