@@ -21,10 +21,12 @@ div.server-stat {
     color: #A0A0A0;
     font-size: 8px;
     border: none;
+    position: relative;
   }
 
   span.refresh {
     margin-left: 10px;
+    cursor: pointer;
   }
 }
 
