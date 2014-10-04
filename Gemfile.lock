@@ -57,10 +57,10 @@ GEM
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
     mime-types (2.3)
-    minitest (5.4.1)
+    minitest (5.4.2)
     multi_json (1.10.1)
     mysql2 (0.3.16)
-    newrelic_rpm (3.9.4.245)
+    newrelic_rpm (3.9.5.251)
     pace-rails (0.1.1)
       jquery-rails
     rack (1.5.2)
@@ -109,7 +109,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    turbolinks (2.3.0)
+    turbolinks (2.4.0)
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
