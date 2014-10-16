@@ -39,7 +39,7 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     erubis (2.7.0)
-    execjs (2.2.1)
+    execjs (2.2.2)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -56,7 +56,7 @@ GEM
     json (1.8.1)
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
-    mime-types (2.4.1)
+    mime-types (2.4.2)
     minitest (5.4.2)
     multi_json (1.10.1)
     mysql2 (0.3.16)
