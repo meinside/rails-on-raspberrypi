@@ -44,7 +44,7 @@ GEM
       tilt
     hike (1.2.3)
     i18n (0.6.11)
-    jbuilder (2.2.4)
+    jbuilder (2.2.5)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.2)
@@ -60,7 +60,7 @@ GEM
     minitest (5.4.3)
     multi_json (1.10.1)
     mysql2 (0.3.17)
-    newrelic_rpm (3.9.6.257)
+    newrelic_rpm (3.9.7.266)
     pace-rails (0.1.1)
       jquery-rails
     rack (1.5.2)
