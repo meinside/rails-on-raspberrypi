@@ -1,7 +1,7 @@
 class ApiController < ApplicationController
   private
   def get_cpu_temperature
-    cpu_temp = (`vcgencmd measure_temp` || 'not supported').strip  # XXX - vcgencmd requires the user to be in 'video' group
+    cpu_temp = (`vcgencmd measure_temp` || 'not supported')  # XXX - vcgencmd requires the user to be in 'video' group
     if cpu_temp =~ /temp=(.*)/
       cpu_temp = $1
     end
@@ -14,7 +14,7 @@ class ApiController < ApplicationController
   public
   # GET /hostname.json
   def hostname
-    hostname = (`hostname` || 'not supported').strip
+    hostname = (`hostname` || 'not supported')
 
     respond_to do |format|
       format.json {
@@ -26,7 +26,7 @@ class ApiController < ApplicationController
   end
   # GET /uname.json
   def uname
-    uname = (`uname -a` || 'not supported').strip
+    uname = (`uname -a` || 'not supported')
 
     respond_to do |format|
       format.json {
@@ -38,7 +38,7 @@ class ApiController < ApplicationController
   end
   # GET /uptime.json
   def uptime
-    uptime = (`uptime` || 'not supported').strip
+    uptime = (`uptime` || 'not supported')
 
     respond_to do |format|
       format.json {
@@ -50,7 +50,7 @@ class ApiController < ApplicationController
   end
   # GET /free_spaces.json
   def free_spaces
-    free_spaces = (`df -h` || 'not supported').strip
+    free_spaces = (`df -h` || 'not supported')
 
     respond_to do |format|
       format.json {
@@ -72,7 +72,7 @@ class ApiController < ApplicationController
   end
   # GET /free_memory.json
   def free_memory
-    free_memory = (`free -o -h` || 'not supported').strip
+    free_memory = (`free -o -h` || 'not supported')
 
     respond_to do |format|
       format.json {
@@ -94,7 +94,7 @@ class ApiController < ApplicationController
   end
   # GET /cpu_info.json
   def cpu_info
-    cpu_info = (`cat /proc/cpuinfo` || 'not supported').strip
+    cpu_info = (`cat /proc/cpuinfo` || 'not supported')
 
     respond_to do |format|
       format.json {
