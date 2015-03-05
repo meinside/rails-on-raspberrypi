@@ -36,19 +36,35 @@ This application is for monitoring Raspberry Pi server's status.
 
   $ sudo passenger-install-apache2-module
 
-====== a. setup site,
+  and do as it directs:
+
+====== a. setup apache,
+
+  $ sudo vi /etc/apache2/apache2.conf
+
+    LoadModule passenger_module /usr/local/rvm/gems/ruby-x.x.x/gems/passenger-y.y.y/buildout/apache2/mod_passenger.so
+    <IfModule mod_passenger.c>
+      PassengerRoot /usr/local/rvm/gems/ruby-x.x.x/gems/passenger-y.y.y
+      PassengerDefaultRuby /usr/local/rvm/gems/ruby-x.x.x/wrappers/ruby
+	  PassengerStartTimeout 300
+    </IfModule>
+
+====== b. setup site,
 
   $ sudo vi /etc/apache2/sites-available/rpi
 
     # if it will be on the virtual host's root:
     <VirtualHost *:80>
       ServerName raspberrypi
+      # !!! Be sure to point DocumentRoot to 'public'!
       DocumentRoot /home/user/rails/rpi/public
       <Directory /home/user/rails/rpi/public>
         # This relaxes Apache security settings.
         AllowOverride all
         # MultiViews must be turned off.
         Options -MultiViews
+		# Uncomment this if you're on Apache >= 2.4:
+		#Require all granted
       </Directory>
     </VirtualHost>
     
@@ -70,7 +86,7 @@ This application is for monitoring Raspberry Pi server's status.
     
     </VirtualHost>
 
-====== b. and enable it
+====== c. and enable it
 
   $ sudo a2ensite rpi
   $ sudo service apache2 reload
