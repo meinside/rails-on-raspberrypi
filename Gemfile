@@ -68,3 +68,6 @@ gem 'pace-rails'
 # fix jquery & turbolinks' interference
 gem 'jquery-turbolinks'
 
+# font awesome
+gem 'font-awesome-sass'
+

@@ -9,7 +9,6 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require pace/blue/pace-theme-minimal
  *= require_tree .
  */
 
@@ -17,6 +16,11 @@ $navbar-height: 30px;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+@import "pace/blue/pace-theme-minimal";
 
 html {
   position: relative;
