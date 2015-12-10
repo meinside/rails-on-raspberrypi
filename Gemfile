@@ -53,9 +53,6 @@ end
 # for bootstrap
 gem 'bootstrap-sass'
 
-# for newrelic
-gem 'newrelic_rpm'
-
 # HAML
 gem 'haml'
 
